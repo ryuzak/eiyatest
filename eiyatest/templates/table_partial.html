@@ -1,0 +1,22 @@
+<tbody>
+    {{vehicles_list}}
+    {% for vehicle in vehicles_list %}
+    <tr>
+        <td>
+            {{vehicle.id}}
+        </td>
+        <td>
+            city {{vehicle.location}}
+        </td>
+        <td>
+            {{vehicle.fuel_km}}
+        </td>
+        <td>
+            {{vehicle.distance}}
+        </td>
+        <td>
+            {{vehicle.fuel_consume}}
+        </td>
+    </tr>
+    {% endfor %}
+</tbody>
